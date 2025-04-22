@@ -1,4 +1,4 @@
-def get_mask_card_number(card_number):
+def get_mask_card_number(card_number) -> str:
     """Возвращает замаскированный номер карты и проверяет соотвествие требованиям"""
     if len(card_number) != 16 or not card_number.isdigit():
         return None
@@ -7,7 +7,7 @@ def get_mask_card_number(card_number):
     return masked
 
 
-def get_mask_account(account_number):
+def get_mask_account(account_number) -> str:
     """Возвращает замаскированный номер счёта и проверяет соотвествие требованиям"""
     if len(account_number) < 4 or not account_number.isdigit():
         return None
