@@ -1,4 +1,5 @@
 from src.masks import get_mask_card_number, get_mask_account
+
 def mask_account_and_card(card_data: str) -> str:
     if 'Счет' in card_data:
         return 'Счет ' + get_mask_account(card_data[5:])
