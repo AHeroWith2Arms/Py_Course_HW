@@ -1,6 +1,6 @@
 from src.masks import get_mask_card_number, get_mask_account
 
-"""Возвращает замаскированные данные карты"""
+"""Возвращает замаскированные данные карты или счет"""
 
 
 def mask_account_and_card(card_data: str) -> str or None:
@@ -11,7 +11,7 @@ def mask_account_and_card(card_data: str) -> str or None:
     return None
 
 
-
+'''Возвращает дату'''
 
 def get_date(card_data: str) -> str:
     input_date = card_data[:10]
