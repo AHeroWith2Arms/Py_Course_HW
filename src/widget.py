@@ -10,7 +10,7 @@ def mask_account_and_card(card_data: str) -> str or None:
         return str(card_data[:-16] + get_mask_card_number(card_data[-16:]))
     return None
 
-"""Возвращает замаскированные данные счета"""
+
 
 
 def get_date(card_data: str) -> str:
